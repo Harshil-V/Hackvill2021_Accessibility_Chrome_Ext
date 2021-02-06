@@ -4,7 +4,7 @@
     "description": "Build an Extension!",
     "permissions": ["storage"],
     "background": {
-        "scripts": ["background.js"],
+        "scripts": ["scripts/background.js"],
         "persistent": false
       },
       "browser_action": {
