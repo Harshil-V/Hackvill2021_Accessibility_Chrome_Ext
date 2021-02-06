@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang = "en" >
-    <head>
-        <meta charset = "UTF-8">
-        <script src="./scripts/jquery-3.5.1.min.js"></script>
+  <head>
+    <meta charset = "UTF-8">
+    <title >Accessibility Extension</title >
 
-        <script src="./scripts/bootstrap.bundle.min.js"></script>
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <title >Accessibility Extension</title >
-        <script src = "./scripts/background.js" ></script>
-        <link rel="./css/stylesheet" href="styles.css">
-        <link href="./css/bootstrap4-toggle.css" rel="stylesheet">
-        <script src="./scripts/bootstrap4-toggle.js"></script>
-    </head>
-    <body>
-        <h3>Hackville 2021 <br> Accessibility Tools</h3>
-        <br>
-        <div class="row form-check md-checkbox" >
-            <div class="col">
-                <label for="color-blind">Color Blind</label> &nbsp;
-                <input id="color-blind" type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="light" data-style="border">
-            </div>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap4-toggle.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <script src="./scripts/jquery-3.5.1.min.js"></script>
+    <script src = ".scripts/background.js" ></script>
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/bootstrap4-toggle.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>Hackville 2021 Accessibility Tools</h1>
+    </header>
+
+    <main role="main" class="container-fluid">
+      
+      <div class="row option-row px-3">
+        <div class="col-12 form-group">
+          <label for="color-blindness" class="col-form-label">Color Blindness</label>
+          <select id="color-blindness" class="custom-select">
+            <option selected placeholder value=0>Off</option>
+          </select>
         </div>
         
-        <div class="row form-check md-checkbox">
-            <div class="col">
-                <label for="color-blind">Easy Read</label> &nbsp;
-                <input id="color-blind" type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="light" data-style="border">
-            </div>
-        </div>
-
-        <div class="row form-check md-checkbox">
-            <div class="col">
-                <label for="text-to-speech-toggle">Text to Speech</label> &nbsp;
-                <input id="text-to-speech-toggle" type="checkbox" checked data-toggle="toggle" data-onstyle="secondary"
-                       data-offstyle="light" data-style="border">
-            </div>
-        </div>
     
-    </body>
+      </div>
+        
+      <div class="row option-row px-3">
+        <label for="easy-read" class="ass-label col-6 col-form-label">Easy Read</label>
+        <div class="col-6 col-toggle">
+          <input id="easy-read" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled" data-offstyle="light" data-style="round">
+        </div>
+      </div>
+
+      <div class="row option-row px-3">
+        <label for="tts" class="ass-label col-6 col-form-label">Text to Speech</label>
+        <div class="col-6 col-toggle">
+          <input id="tts" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled" data-offstyle="light" data-style="round">
+        </div>
+      </div>
+        
+
+    </main>
+  </body>
 </html>
