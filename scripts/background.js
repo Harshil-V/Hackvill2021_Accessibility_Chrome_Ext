@@ -9,6 +9,6 @@
     }
 
     document.onmouseup = function() {
-        let text = chrome.tabs.getSelection();
-        textToSpeech(text.toString());
+        // let text = chrome.tabs.getSelection();
+        textToSpeech(textSelected);
     };
