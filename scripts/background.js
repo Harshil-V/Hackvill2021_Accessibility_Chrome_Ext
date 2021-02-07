@@ -6,8 +6,6 @@
         info.lang = 'en-us';
         info.text = text;
         speechSynthesis.speak(info);
+        text = '';
     }
 
-    document.onmouseup = function() {
-        textToSpeech(textSelected.summary);
-    };

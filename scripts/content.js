@@ -3,3 +3,4 @@ document.onmouseup = function() {
         'summary': window.getSelection().toString()
     });
 }
+

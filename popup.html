@@ -43,6 +43,13 @@
         <div class="col-6 col-toggle">
           <input id="tts" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled" data-offstyle="light" data-style="round">
         </div>
+	      <script>
+		      $(function() {
+			      $('#tts').change(function() {
+				      $('#console-event').html('Toggle: ' + $(this).prop('checked'))
+			      })
+		      })
+	      </script>
       </div>
         
 
