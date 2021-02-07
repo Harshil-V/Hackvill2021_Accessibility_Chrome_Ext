@@ -3,7 +3,6 @@
   <head>
     <meta charset = "UTF-8">
     <title >Accessibility Extension</title >
-
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/bootstrap4-toggle.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
@@ -11,21 +10,32 @@
     <script src = ".scripts/background.js" ></script>
     <script src="./scripts/bootstrap.bundle.min.js"></script>
     <script src="./scripts/bootstrap4-toggle.js"></script>
-  </head>
-  <body>
-
-    <header>
-      <h1>Hackville 2021 Accessibility Tools</h1>
-    </header>
-
-    <main role="main" class="container-fluid">
-      
-      <div class="row option-row px-3">
-        <div class="col-12 form-group">
-          <label for="color-blindness" class="col-form-label">Color Blindness</label>
-          <select id="color-blindness" class="custom-select">
-            <option selected placeholder value=0>Off</option>
-          </select>
+	  <script src="./scripts/bootstrap.bundle.min.js"></script>
+	  <link href="./css/bootstrap.min.css" rel="stylesheet">
+	  <title >Accessibility Extension</title >
+	  <script src = ".scripts/background.js" ></script>
+	  <link rel="./css/stylesheet" href="styles.css">
+	  <link href="./css/bootstrap4-toggle.css" rel="stylesheet">
+	  <script src="./scripts/bootstrap4-toggle.js"></script>
+	  <script src="jquery.min.js"></script>
+	  <script src="popup.js"></script>
+   
+    </head>
+    <body>
+        <h3>Hackville 2021 <br> Accessibility Tools</h3>
+        <br>
+        <div class="row form-check md-checkbox" >
+            <div class="col">
+                <label for="color-blind">Color Blind</label> &nbsp;
+                <input id="color-blind" type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="light" data-style="border">
+            </div>
+        </div>
+        
+        <div class="row form-check md-checkbox">
+            <div class="col">
+                <label for="color-blind">Easy Read</label> &nbsp;
+                <input id="color-blind" type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="light" data-style="border">
+            </div>
         </div>
       </div>
 
@@ -35,8 +45,42 @@
           <input id="tts" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled" data-offstyle="light" data-style="round">
         </div>
       </div>
+    
+    </body>
+    <body>
+        <form id="cvd_radios">
+            <div class="label"><input class="inputRadio" type="radio" name="type" id="normal" value="normal"><label
+                    for="normal">Normal Color Vision</label></div>
         
+            <div class="label"><input class="inputRadio" type="radio" name="type" id="protanopia" value="protanopia"><label
+                    for="protanopia">Red-Blind / Protanopia</label></div>
+        
+            <div class="label"><input class="inputRadio" type="radio" name="type" id="deuteranopia" value="deuteranopia"><label
+                    for="deuteranopia">Green-Blind / Deuteranopia</label></div>
+        
+            <div class="label"><input class="inputRadio" type="radio" name="type" id="tritanopia" value="tritanopia"><label
+                    for="tritanopia">Blue-Blind / Tritanopia</label></div>
+        
+            <div class="label"><input class="inputRadio" type="radio" name="type" id="protanomaly" value="protanomaly"><label
+                    for="protanomaly">Red-Weak / Protanomaly</label></div>
+        
+            <div class="label"><input class="inputRadio" type="radio" name="type" id="deuteranomaly"
+                                      value="deuteranomaly"><label for="deuteranomaly">Green-Weak / Deuteranomaly</label></div>
+        
+            <div class="label"><input class="inputRadio" type="radio" name="type" id="tritanomaly" value="tritanomaly"><label
+                    for="tritanomaly">Blue-Weak / Tritanomaly</label></div>
+        
+            <div class="label"><input class="inputRadio" type="radio" name="type" id="achromatopsia"
+                                      value="achromatopsia"><label for="achromatopsia">Monochromacy / Achromatopsia</label>
+            </div>
+        
+            <div class="label"><input class="inputRadio" type="radio" name="type" id="achromatomaly"
+                                      value="achromatomaly"><label for="achromatomaly">Blue Cone Monochromacy /
+                Achromatomaly</label></div>
+        
+            <div class="label"><input class="inputRadio" type="radio" name="type" id="deactivate"
+                                      value="deactivate" checked><label for="deactivate">Deactivate</label></div>
+        </form>
+    </body>
 
-    </main>
-  </body>
 </html>
