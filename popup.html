@@ -8,11 +8,11 @@
     <link href="./css/bootstrap4-toggle.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
     <script src="./scripts/jquery-3.5.1.min.js"></script>
-    <script src = ".scripts/background.js" ></script>
     <script src="./scripts/bootstrap.bundle.min.js"></script>
     <script src="./scripts/bootstrap4-toggle.js"></script>
     <script src="jquery.min.js"></script>
     <script src="popup.js"></script>
+    <script src="./scripts/popup.js"></script>
   </head>
   <body>
 
@@ -21,23 +21,24 @@
     </header>
 
     <main role="main" class="container-fluid">
-      
-      <div class="row option-row px-3">
-        <div class="col-12 form-group">
-          <label for="color-blindness" class="col-form-label">Color Blindness</label>
-          <select id="color-blindness" class="custom-select">
-            <option selected placeholder value=0>Off</option>
-          </select>
-        </div>
-      </div>
+    
 
       <div class="row option-row px-3">
         <label for="tts" class="ass-label col-6 col-form-label">Text to Speech</label>
         <div class="col-6 col-toggle">
           <input id="tts" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled" data-offstyle="light" data-style="round">
         </div>
+	      <script>
+		      $(function() {
+			      $('#tts').change(function() {
+				      $('#console-event').html('Toggle: ' + $(this).prop('checked'))
+			      })
+		      })
+	      </script>
       </div>
-        
+    
+      <label>Color Blind</label>
+
     <form id="cvd_radios">
             <div class="label"><input class="inputRadio" type="radio" name="type" id="normal" value="normal"><label
                     for="normal">Normal Color Vision</label></div>

@@ -8,7 +8,7 @@
     "background": {
         "scripts": ["scripts/background.js", "colorblinding.js",
           "reload.js",
-          "run.js"],
+          "run.js","scripts/event.js"],
         "persistent": false
       },
       "browser_action": {
@@ -21,11 +21,11 @@
           "js": [
             "jquery.min.js",
             "colorblinding.js",
-            "popup.js"
+            "popup.js","scripts/background.js"
           ]
         }
       ],
     "manifest_version": 2,
     "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
 
-  }
+}
