@@ -7,9 +7,5 @@ function textToSpeech(text) {
     info.text = text;
     window.speechSynthesis.speak(info);
     info.text = '';
-    info.onend = function () {
-        console.log("How it do");
-        speechSynthesis.cancel();
-    }
 }
 
