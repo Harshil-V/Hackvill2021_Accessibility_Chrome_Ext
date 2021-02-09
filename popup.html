@@ -39,17 +39,13 @@
       </div>
 
       <div class="row option-row px-3">
-        <label for="tts" class="ass-label col-6 col-form-label">Text to Speech</label>
+        <label for="switch" class="ass-label col-6 col-form-label">Text to Speech</label>
         <div class="col-6 col-toggle">
-          <input id="tts" type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled" data-offstyle="light" data-style="round">
+	        <label class="switch" id="switch">
+		        <input type="checkbox" id="tts" name="toggle">
+		        <span class="slider round"></span>
+	        </label>
         </div>
-	      <script>
-		      $(function() {
-			      $('#tts').change(function() {
-				      $('#console-event').html('Toggle: ' + $(this).prop('checked'))
-			      })
-		      })
-	      </script>
       </div>
         
 

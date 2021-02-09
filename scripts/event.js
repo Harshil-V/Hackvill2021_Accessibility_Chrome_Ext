@@ -5,8 +5,8 @@ function getPageDetails(callback) {
 	// Perform the callback when a message is received from the content script
 	chrome.runtime.onMessage.addListener(function(message)  { 
 		// Call the callback function
-		textSelected=message;
+		textSelected = message;
 		console.log(textSelected.summary);
 		textToSpeech(textSelected.summary);
 	}); 
-};
+}
