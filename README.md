@@ -40,11 +40,11 @@ For Color blindness:
 
 **Arnold Gihozo**
 
-<a href='https://github.com/petreman' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://upload.wikimedia.org/wikipedia/commons/0/00/Follow_button.png' border='0' alt='followArnold' /></a>
+<a href='https://github.com/ArnoldGihozo' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://upload.wikimedia.org/wikipedia/commons/0/00/Follow_button.png' border='0' alt='followArnold' /></a>
 
 **Keegan Petreman**
 
-<a href='https://github.com/ArnoldGihozo' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://upload.wikimedia.org/wikipedia/commons/0/00/Follow_button.png' border='0' alt='followArnold' /></a>
+<a href= 'https://github.com/petreman' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://upload.wikimedia.org/wikipedia/commons/0/00/Follow_button.png' border='0' alt='followArnold' /></a>
 
 **Joseph Menezes**
 
